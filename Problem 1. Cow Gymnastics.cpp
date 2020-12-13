@@ -2,8 +2,8 @@
 #include <string>
 using namespace std;
 int main(){
-//freopen("gymnastics.in", "r", stdin);
-//freopen("gymnastics.out", "w", stdout);
+freopen("gymnastics.in", "r", stdin);
+freopen("gymnastics.out", "w", stdout);
 int N,K,ar[10][20],a,b,a1=-1,b1=-1,ans,ansm=0;
 cin >> K >> N;
 for(int i=0; i<K; i++){
@@ -16,8 +16,8 @@ for(int i=0; i<K; i++){
      ans=1;
      a=ar[0][k];
      b=ar[0][j];
-     for(int z=1; z<K; z++){
-         
+     
+     for(int z=1; z<K; z++){   
       for(int x=0; x<N; x++){
        if(a==ar[z][x]){
          a1=x;
@@ -32,9 +32,7 @@ for(int i=0; i<K; i++){
   if(ans==K){
        ansm++;}
   }
-  
   } 
-  
 cout << ansm;
 }
 
